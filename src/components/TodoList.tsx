@@ -167,7 +167,7 @@ export function TodoList() {
 
   return (
     <main className="relative flex min-h-screen w-full flex-col items-center justify-start bg-white">
-      <div className="flex w-[500px] flex-col items-center justify-start gap-1 px-6 pt-[100px] lg:px-0">
+      <div className="flex w-full max-w-full flex-col items-stretch justify-start gap-1 px-4 pt-20 tablet:w-[440px] tablet:max-w-[440px] tablet:px-6 tablet:pt-24 desktop:w-[500px] desktop:max-w-[500px] desktop:px-0 desktop:pt-[100px]">
         {todos.map((todo) => (
           <TodoItem
             key={todo.id}

@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1024px;
+}
+
 body {
   background: #ffffff;
 }
