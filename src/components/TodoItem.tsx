@@ -25,7 +25,7 @@ export function TodoItem({
 
   return (
     <div
-      className={`flex w-full shrink-0 items-center py-2.5 px-3.5 ${
+      className={`flex w-full shrink-0 items-center py-2 px-3 tablet:py-2.5 tablet:px-3.5 ${
         todo.completed
           ? "group justify-between transition-colors hover:bg-neutral-50"
           : "gap-3"
@@ -72,7 +72,7 @@ export function TodoItem({
           }}
           autoFocus={autoFocus}
           placeholder="Enter task"
-          className={`min-w-0 flex-1 bg-transparent text-base leading-normal outline-none ${
+          className={`min-w-0 flex-1 bg-transparent text-sm leading-normal outline-none tablet:text-base ${
             todo.completed
               ? "text-black line-through decoration-solid"
               : isEmpty
