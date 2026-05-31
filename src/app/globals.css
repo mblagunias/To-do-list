@@ -7,6 +7,18 @@
   --breakpoint-desktop: 1024px;
 }
 
+html {
+  height: auto;
+}
+
 body {
+  min-height: 100dvh;
   background: #ffffff;
+  overflow-x: hidden;
+}
+
+@media (max-width: 767px) {
+  [data-todo-input] {
+    font-size: 16px;
+  }
 }

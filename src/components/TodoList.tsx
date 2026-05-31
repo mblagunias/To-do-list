@@ -166,8 +166,8 @@ export function TodoList() {
   }, []);
 
   return (
-    <main className="relative flex min-h-screen w-full flex-col items-center justify-start bg-white">
-      <div className="flex w-full max-w-full flex-col items-stretch justify-start gap-1 px-4 pt-20 tablet:w-[440px] tablet:max-w-[440px] tablet:px-6 tablet:pt-24 desktop:w-[500px] desktop:max-w-[500px] desktop:px-0 desktop:pt-[100px]">
+    <main className="relative flex h-dvh w-full flex-col items-center overflow-hidden bg-white tablet:h-auto tablet:min-h-dvh tablet:overflow-visible">
+      <div className="flex min-h-0 w-full max-w-full flex-1 flex-col items-stretch gap-1 overflow-y-auto overscroll-y-contain px-4 pb-24 pt-20 tablet:w-[440px] tablet:max-w-[440px] tablet:flex-none tablet:overflow-visible tablet:px-6 tablet:pb-28 tablet:pt-24 desktop:w-[500px] desktop:max-w-[500px] desktop:px-0 desktop:pb-32 desktop:pt-[100px]">
         {todos.map((todo) => (
           <TodoItem
             key={todo.id}
@@ -180,7 +180,6 @@ export function TodoList() {
             autoFocus={todo.id === focusNewId}
           />
         ))}
-
       </div>
 
       <AddTaskButton onClick={addTask} />
