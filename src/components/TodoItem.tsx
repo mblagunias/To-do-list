@@ -72,7 +72,7 @@ export function TodoItem({
           }}
           autoFocus={autoFocus}
           placeholder="Enter task"
-          className={`min-w-0 flex-1 bg-transparent text-sm leading-normal outline-none tablet:text-base ${
+          className={`min-w-0 flex-1 bg-transparent text-base leading-normal outline-none ${
             todo.completed
               ? "text-black line-through decoration-solid"
               : isEmpty
